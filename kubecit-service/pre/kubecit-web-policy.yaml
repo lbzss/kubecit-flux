@@ -2,11 +2,11 @@
 apiVersion: image.toolkit.fluxcd.io/v1beta2
 kind: ImagePolicy
 metadata:
-  name: kubecit-manager
-  namespace: flux-system
+  name: kubecit-web
+  namespace: wlb965
 spec:
   imageRepositoryRef:
-    name: kubecit-manager
+    name: kubecit-web
   policy:
     semver:
       range: '>=1.0.0'
