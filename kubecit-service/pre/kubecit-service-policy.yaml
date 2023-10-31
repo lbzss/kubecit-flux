@@ -7,7 +7,7 @@ metadata:
 spec:
   filterTags:
     extract: $ts
-    pattern: ^main-[a-f0-9]+-(?P<ts>[0-9]+)
+    pattern: ^(?P<ts>[0-9]+)-[a-z0-9]+
   imageRepositoryRef:
     name: kubecit-service
   policy:
