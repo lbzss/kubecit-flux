@@ -5,8 +5,11 @@ metadata:
   name: kubecit-service
   namespace: wlb965
 spec:
+  filterTags:
+    extract: $ts
+    pattern: ^main-[a-f0-9]+-(?P<ts>[0-9]+)
   imageRepositoryRef:
     name: kubecit-service
   policy:
-    semver:
-      range: '>=1.0.0'
+    numerical:
+      order: asc
