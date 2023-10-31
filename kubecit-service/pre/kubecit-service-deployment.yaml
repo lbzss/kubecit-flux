@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: kubecit-service
-  namespace: default
+  namespace: wlb965
 spec:
   selector:
     matchLabels:

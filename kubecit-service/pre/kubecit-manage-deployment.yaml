@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: kubecit-manage-service
+  namespace: wlb965
 spec:
   selector:
     matchLabels:
@@ -14,6 +15,6 @@ spec:
     spec:
       containers:
         - name: kubecit-manage-service
-          image: z627062293/cit965-manager:v1.0.0
+          image: z627062293/cit965-manage:v1.0.0
           ports:
             - containerPort: 80
