@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: kubecit-service
-          image: z627062293/kubecit-service:v1.0.0 # {"$imagepolicy": "wlb965:kubecit-service"}
+          image: z627062293/kubecit-service:v1.0.2 # {"$imagepolicy": "wlb965:kubecit-service"}
           imagePullPolicy: IfNotPresent
           ports:
             - name: http
