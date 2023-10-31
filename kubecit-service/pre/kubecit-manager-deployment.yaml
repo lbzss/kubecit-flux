@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
         - name: kubecit-manager-service
-          image: z627062293/cit965-manager:v1.0.0 # {"$imagepolicy": "wlb965:kubecit-manager-service"}
+          image: z627062293/cit965-manager:v1.0.0 # {"$imagepolicy": "wlb965:kubecit-manager"}
           ports:
             - containerPort: 80
