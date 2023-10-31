@@ -5,5 +5,5 @@ metadata:
   name: kubecit-web
   namespace: wlb965
 spec:
-  image: z627062293/kubecit-web
+  image: z627062293/cit965-frontend
   interval: 5m0s
