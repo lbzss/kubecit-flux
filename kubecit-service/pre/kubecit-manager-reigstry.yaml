@@ -5,5 +5,5 @@ metadata:
   name: kubecit-manager
   namespace: wlb965
 spec:
-  image: z627062293/kubecit-manager
+  image: z627062293/cit965-manager
   interval: 5m0s
