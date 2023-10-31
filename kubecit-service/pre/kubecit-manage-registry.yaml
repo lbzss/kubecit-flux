@@ -3,7 +3,7 @@ apiVersion: image.toolkit.fluxcd.io/v1beta2
 kind: ImageRepository
 metadata:
   name: kubecit-manage
-  namespace: flux-system
+  namespace: wlb965
 spec:
   image: z627062293/kubecit-manage
   interval: 5m0s
