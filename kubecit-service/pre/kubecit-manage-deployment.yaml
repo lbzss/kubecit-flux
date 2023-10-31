@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kubecit-manage-service
+spec:
+  selector:
+    matchLabels:
+      app: kubecit-manage-service
+  replicas: 1 # tells deployment to run 2 pods matching the template
+  template:
+    metadata:
+      labels:
+        app: kubecit-manage-service
+    spec:
+      containers:
+        - name: kubecit-manage-service
+          image: z627062293/cit965-manager:v1.0.0
+          ports:
+            - containerPort: 80

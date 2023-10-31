@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kubecit-service
+  namespace: default
+spec:
+  selector:
+    matchLabels:
+      app: kubecit-service
+  template:
+    metadata:
+      labels:
+        app: kubecit-service
+    spec:
+      containers:
+        - name: kubecit-service
+          image: z627062293/kubecit-service:v1.0.0
+          imagePullPolicy: IfNotPresent
+          ports:
+            - name: http
+              containerPort: 8000
+              protocol: TCP

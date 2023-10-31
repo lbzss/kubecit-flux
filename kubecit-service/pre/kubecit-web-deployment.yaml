@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kubecit-web-service
+spec:
+  selector:
+    matchLabels:
+      app: kubecit-web-service
+  replicas: 1 # tells deployment to run 2 pods matching the template
+  template:
+    metadata:
+      labels:
+        app: kubecit-web-service
+    spec:
+      containers:
+        - name: kubecit-web-service
+          image: z627062293/cit965-frontend:v1.0.0
+          ports:
+            - containerPort: 80
